@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H2R Project Files — TechNova Pvt. Ltd.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">H2R</div>
+        <div class="nav-logo-text">Tech<span>Nova</span></div>
+      </a>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#structure">Structure</a>
+        <a href="#config">Configuration</a>
+        <a href="#programs">Programs</a>
+        <a href="#data">Data</a>
+        <a href="#testing">Testing</a>
+        <a href="#timeline">Timeline</a>
+      </div>
+      <div class="nav-status">SAP HCM Active</div>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="overview">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+        Hire-to-Retire Project
+      </div>
+      <h1>SAP HCM <span>Project Files</span></h1>
+      <p class="hero-subtitle">End-to-end process documentation &amp; configuration files for TechNova Pvt. Ltd.</p>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <div class="hero-meta-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+          </div>
+          <strong>500+</strong> Employees
+        </div>
+        <div class="hero-meta-item">
+          <div class="hero-meta-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <strong>SAP S/4HANA</strong> ECC 6.0
+        </div>
+        <div class="hero-meta-item">
+          <div class="hero-meta-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <strong>PF/ESI/TDS</strong> Compliant
+        </div>
+        <div class="hero-meta-item">
+          <div class="hero-meta-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <strong>8 Phases</strong> Complete
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ STATS BAR ═══ -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-icon teal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
+        </div>
+        <div class="stat-text">
+          <span class="stat-number">24</span>
+          <span class="stat-label">Total Files</span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon amber">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <div class="stat-text">
+          <span class="stat-number">8</span>
+          <span class="stat-label">ABAP Programs</span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+        </div>
+        <div class="stat-text">
+          <span class="stat-number">6</span>
+          <span class="stat-label">Config Files</span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon purple">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <div class="stat-text">
+          <span class="stat-number">4</span>
+          <span class="stat-label">Documents</span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+        </div>
+        <div class="stat-text">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Test Scripts</span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon red">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        </div>
+        <div class="stat-text">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Data Files</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ MAIN CONTENT ═══ -->
+  <main class="main-content">
+
+    <!-- ── Project Structure ── -->
+    <div class="folder-section" id="structure">
+      <div class="section-header">
+        <h2 class="section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+          Project Structure
+        </h2>
+        <span class="section-count">24 files</span>
+      </div>
+      <div class="file-tree">
+        <div class="file-tree-header">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="file-tree-title">h2r-technova/</span>
+        </div>
+        <div class="tree-content">
+          <div class="tree-line folder"><span class="indent"></span><span class="icon">📁</span> src/</div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">📄</span> ZH2R_EMPLOYEE_MASTER.abap <span class="comment">  &mdash; Employee master data program</span></div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">📄</span> ZH2R_PAYROLL_RUN.abap <span class="comment">  &mdash; Payroll execution driver</span></div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">📄</span> ZH2R_ONBOARDING.abap <span class="comment">  &mdash; Auto onboarding workflow</span></div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">📄</span> ZH2R_SEPARATION.abap <span class="comment">  &mdash; Exit &amp; F&amp;F processing</span></div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">📄</span> ZH2R_TIME_EVAL.abap <span class="comment">  &mdash; Time evaluation with PT60</span></div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">📄</span> ZH2R_BENEFITS.abap <span class="comment">  &mdash; Benefits enrollment module</span></div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">📄</span> ZH2R_PERFORMANCE.abap <span class="comment">  &mdash; Appraisal processing</span></div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">📄</span> ZH2R_COMPLIANCE.abap <span class="comment">  &mdash; Statutory compliance checks</span></div>
+          <div class="tree-line folder"><span class="indent"></span><span class="icon">📁</span> config/</div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">⚙️</span> org_model.xml <span class="comment">  &mdash; Organizational structure (OM)</span></div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">⚙️</span> wage_types.json <span class="comment">  &mdash; Custom wage type definitions</span></div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">⚙️</span> payroll_schemas.conf <span class="comment">  &mdash; PY-India payroll schema</span></div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">⚙️</span> feature_config.xml <span class="comment">  &mdash; SAP features (TARIF, etc.)</span></div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">⚙️</span> security_roles.xml <span class="comment">  &mdash; Authorization roles (PA40)</span></div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">⚙️</span> email_templates.json <span class="comment">  &mdash; Onboarding/exit email configs</span></div>
+          <div class="tree-line folder"><span class="indent"></span><span class="icon">📁</span> data/</div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">🗃️</span> employee_seed_data.csv <span class="comment">  &mdash; 500+ employee seed records</span></div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">🗃️</span> payroll_results.sql <span class="comment">  &mdash; PY result table inserts</span></div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">🗃️</span> org_unit_mapping.csv <span class="comment">  &mdash; Dept to position mapping</span></div>
+          <div class="tree-line folder"><span class="indent"></span><span class="icon">📁</span> testing/</div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">🧪</span> test_payroll_run.py <span class="comment">  &mdash; Payroll integration test suite</span></div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">🧪</span> test_onboarding_flow.py <span class="comment">  &mdash; E2E onboarding test cases</span></div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">🧪</span> test_compliance.py <span class="comment">  &mdash; PF/ESI/TDS compliance checks</span></div>
+          <div class="tree-line folder"><span class="indent"></span><span class="icon">📁</span> docs/</div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">📝</span> H2R_Process_Documentation.md <span class="comment">  &mdash; Full process guide</span></div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">📝</span> SAP_Transaction_Reference.md <span class="comment">  &mdash; T-Code quick reference</span></div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">📝</span> Infotype_Mapping.md <span class="comment">  &mdash; IT0001-IT9901 mapping</span></div>
+          <div class="tree-line file"><span class="indent"></span><span class="indent"></span><span class="icon">📝</span> Deployment_Runbook.md <span class="comment">  &mdash; Go-live checklist</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ABAP Programs ── -->
+    <div class="folder-section" id="programs">
+      <div class="section-header">
+        <h2 class="section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          ABAP Programs
+        </h2>
+        <span class="section-count">8 files</span>
+      </div>
+      <div class="files-grid">
+
+        <div class="file-card">
+          <div class="file-card-header">
+            <div class="file-icon abap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div class="file-info">
+              <div class="file-name">ZH2R_EMPLOYEE_MASTER.abap</div>
+              <div class="file-path">src/ZH2R_EMPLOYEE_MASTER.abap</div>
+            </div>
+          </div>
+          <div class="file-card-body">
+            <p class="file-desc">Creates and maintains employee master data via infotypes IT0000-IT0006. Handles PA30 actions for new hires, transfers, and data corrections with automatic validation.</p>
+          </div>
+          <div class="file-card-footer">
+            <div class="file-tags">
+              <span class="file-tag abap">ABAP</span>
+              <span class="file-tag hcm">HCM-PA</span>
+              <span class="file-tag sap">PA30</span>
+            </div>
+            <span class="file-size">14.2 KB</span>
+          </div>
+        </div>
+
+        <div class="file-card">
+          <div class="file-card-header">
+            <div class="file-icon abap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div class="file-info">
+              <div class="file-name">ZH2R_PAYROLL_RUN.abap</div>
+              <div class="file-path">src/ZH2R_PAYROLL_RUN.abap</div>
+            </div>
+          </div>
+          <div class="file-card-body">
+            <p class="file-desc">Executes India payroll run via PC00_M40_CALC. Processes gross-to-net calculation, statutory deductions (PF, ESI, TDS, PT), and generates payslips with bank file output.</p>
+          </div>
+          <div class="file-card-footer">
+            <div class="file-tags">
+              <span class="file-tag abap">ABAP</span>
+              <span class="file-tag hcm">HCM-PY</span>
+              <span class="file-tag sap">PC00_M40</span>
+            </div>
+            <span class="file-size">22.8 KB</span>
+          </div>
+        </div>
+
+        <div class="file-card">
+          <div class="file-card-header">
+            <div class="file-icon script">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <div class="file-info">
+              <div class="file-name">ZH2R_ONBOARDING.abap</div>
+              <div class="file-path">src/ZH2R_ONBOARDING.abap</div>
+            </div>
+          </div>
+          <div class="file-card-body">
+            <p class="file-desc">Automated onboarding workflow triggered by PA40 hiring action. Creates all required infotypes, assigns organizational position, cost center, and triggers welcome email notification.</p>
+          </div>
+          <div class="file-card-footer">
+            <div class="file-tags">
+              <span class="file-tag abap">ABAP</span>
+              <span class="file-tag hcm">HCM-PA</span>
+              <span class="file-tag sap">PA40</span>
+            </div>
+            <span class="file-size">11.6 KB</span>
+          </div>
+        </div>
+
+        <div class="file-card">
+          <div class="file-card-header">
+            <div class="file-icon flow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+            </div>
+            <div class="file-info">
+              <div class="file-name">ZH2R_SEPARATION.abap</div>
+              <div class="file-path">src/ZH2R_SEPARATION.abap</div>
+            </div>
+          </div>
+          <div class="file-card-body">
+            <p class="file-desc">Handles employee exit processing via PA40 Action 33. Calculates gratuity (IT0019), final settlement, leaves encashment, PF withdrawal, and triggers offboarding workflow.</p>
+          </div>
+          <div class="file-card-footer">
+            <div class="file-tags">
+              <span class="file-tag abap">ABAP</span>
+              <span class="file-tag hcm">HCM-PA</span>
+              <span class="file-tag sap">Act.33</span>
+            </div>
+            <span class="file-size">16.3 KB</span>
+          </div>
+        </div>
+
+        <div class="file-card">
+          <div class="file-card-header">
+            <div class="file-icon config">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="file-info">
+              <div class="file-name">ZH2R_TIME_EVAL.abap</div>
+              <div class="file-path">src/ZH2R_TIME_EVAL.abap</div>
+            </div>
+          </div>
+          <div class="file-card-body">
+            <p class="file-desc">Time evaluation driver integrating CAT2 time entries with PT60 evaluation. Manages shift scheduling, overtime calculation, absence quotas, and attendance tracking for ESS/MSS.</p>
+          </div>
+          <div class="file-card-footer">
+            <div class="file-tags">
+              <span class="file-tag abap">ABAP</span>
+              <span class="file-tag hcm">HCM-PT</span>
+              <span class="file-tag sap">PT60</span>
+            </div>
+            <span class="file-size">13.1 KB</span>
+          </div>
+        </div>
+
+        <div class="file-card">
+          <div class="file-card-header">
+            <div class="file-icon doc">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+            </div>
+            <div class="file-info">
+              <div class="file-name">ZH2R_BENEFITS.abap</div>
+              <div class="file-path">src/ZH2R_BENEFITS.abap</div>
+            </div>
+          </div>
+          <div class="file-card-body">
+            <p class="file-desc">Manages employee benefits enrollment including PF (IT0376), medical insurance (IT0021), gratuity, and group insurance. Auto-calculates employer contributions and compliance reports.</p>
+          </div>
+          <div class="file-card-footer">
+            <div class="file-tags">
+              <span class="file-tag abap">ABAP</span>
+              <span class="file-tag hcm">HCM-PY</span>
+              <span class="file-tag sap">Benefits</span>
+            </div>
+            <span class="file-size">10.4 KB</span>
+          </div>
+        </div>
+
+        <div class="file-card">
+          <div class="file-card-header">
+            <div class="file-icon report">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <div class="file-info">
+              <div class="file-name">ZH2R_PERFORMANCE.abap</div>
+              <div class="file-path">src/ZH2R_PERFORMANCE.abap</div>
+            </div>
+          </div>
+          <div class="file-card-body">
+            <p class="file-desc">SAP LSO integrated performance appraisal module. Manages goal setting, periodic reviews, 360-degree feedback, and links appraisal results to promotion decisions and compensation.</p>
+          </div>
+          <div class="file-card-footer">
+            <div class="file-tags">
+              <span class="file-tag abap">ABAP</span>
+              <span class="file-tag hcm">HCM-PE</span>
+              <span class="file-tag sap">LSO</span>
+            </div>
+            <span class="file-size">9.7 KB</span>
+          </div>
+        </div>
+
+        <div class="file-card">
+          <div class="file-card-header">
+            <div class="file-icon data">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="file-info">
+              <div class="file-name">ZH2R_COMPLIANCE.abap</div>
+              <div class="file-path">src/ZH2R_COMPLIANCE.abap</div>
+            </div>
+          </div>
+          <div class="file-card-body">
+            <p class="file-desc">Automated statutory compliance engine for Indian payroll. Validates PF, ESI, TDS, professional tax, and gratuity calculations. Generates Form 16, monthly challans, and audit reports.</p>
+          </div>
+          <div class="file-card-footer">
+            <div class="file-tags">
+              <span class="file-tag abap">ABAP</span>
+              <span class="file-tag hcm">HCM-PY</span>
+              <span class="file-tag sap">Statutory</span>
+            </div>
+            <span class="file-size">18.5 KB</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── Configuration Files ── -->
+    <div class="folder-section" id="config">
+      <div class="section-header">
+        <h2 class="section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+          Configuration Files
+        </h2>
+        <span class="section-count">6 files</span>
+      </div>
+      <div class="files-grid">
+
+        <div class="file-card">
+          <div class="file-card-header">
+            <div class="file-icon config">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <div class="file-info">
+              <div class="file-name">org_model.xml</div>
+              <div class="file-path">config/org_model.xml</div>
+            </div>
+          </div>
+          <div class="file-card-body">
+            <p class="file-desc">SAP Organizational Management structure defining company code, personnel areas, personnel subareas, organizational units, positions, and reporting hierarchy for TechNova.</p>
+          </div>
+          <div class="file-card-footer">
+            <div class="file-tags">
+              <span class="file-tag xml">XML</span>
+              <span class="file-tag sap">SAP OM</span>
+            </div>
+            <span class="file-size">8.4 KB</span>
+          </div>
+        </div>
+
+        <div class="file-card">
+          <div class="file-card-header">
+            <div class="file-icon data">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/></svg>
+            </div>
+            <div class="file-info">
+              <div class="file-name">wage_types.json</div>
+              <div class="file-path">config/wage_types.json</div>
+            </div>
+          </div>
+          <div class="file-card-body">
+            <p class="file-desc">Custom wage type definitions including /3PS (Precision Skill Surcharge), /3PF (PF employer), /3ES (ESI), /3TD (TDS), and secondary wage types for Indian statutory compliance.</p>
+          </div>
+          <div class="file-card-footer">
+            <div class="file-tags">
+              <span class="file-tag json">JSON</span>
+              <span class="file-tag hcm">HCM-PY</span>
+            </div>
+            <span class="file-size">5.1 KB</span>
+          </div>
+        </div>
+
+        <div class="file-card">
+          <div class="file-card-header">
+            <div class="file-icon config">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+            </div>
+            <div class="file-info">
+              <div class="file-name">payroll_schemas.conf</div>
+              <div class="file-path">config/payroll_schemas.conf</div>
+            </div>
+          </div>
+          <div class="file-card-body">
+            <p class="file-desc">India payroll schema configuration (U000) with sub-schemas for gross calculation, statutory deductions, net pay computation, and bank transfer posting rules for PC00_M40.</p>
+          </div>
+          <div class="file-card-footer">
+            <div class="file-tags">
+              <span class="file-tag config">CONF</span>
+              <span class="file-tag sap">PY-IN</span>
+            </div>
+            <span class="file-size">3.8 KB</span>
+          </div>
+        </div>
+
+        <div class="file-card">
+          <div class="file-card-header">
+            <div class="file-icon config">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <div class="file-info">
+              <div class="file-name">feature_config.xml</div>
+              <div class="file-path">config/feature_config.xml</div>
+            </div>
+          </div>
+          <div class="file-card-body">
+            <p class="file-desc">SAP feature tree configuration for TARIF (pay scale grouping), WKREG (work schedule rule), and ABKRS (payroll area) defaulting rules based on employee group and subgroup.</p>
+          </div>
+          <div class="file-card-footer">
+            <div class="file-tags">
+              <span class="file-tag xml">XML</span>
+              <span class="file-tag sap">Features</span>
+            </div>
+            <span class="file-size">6.2 KB</span>
+          </div>
+        </div>
+
+        <div class="file-card">
+          <div class="file-card-header">
+            <div class="file-icon data">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            </div>
+            <div class="file-info">
+              <div class="file-name">security_roles.xml</div>
+              <div class="file-path">config/security_roles.xml</div>
+            </div>
+          </div>
+          <div class="file-card-body">
+            <p class="file-desc">Authorization role definitions for HR administrators, payroll managers, ESS self-service users, and MSS manager roles. Includes IT9901 security clearance field-level access controls.</p>
+          </div>
+          <div class="file-card-footer">
+            <div class="file-tags">
+              <span class="file-tag xml">XML</span>
+              <span class="file-tag sap">Security</span>
+            </div>
+            <span class="file-size">4.7 KB</span>
+          </div>
+        </div>
+
+        <div class="file-card">
+          <div class="file-card-header">
+            <div class="file-icon doc">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="file-info">
+              <div class="file-name">email_templates.json</div>
+              <div class="file-path">config/email_templates.json</div>
+            </div>
+          </div>
+          <div class="file-card-body">
+            <p class="file-desc">Email notification templates for onboarding welcome, benefits enrollment, payslip distribution, appraisal reminders, and separation/offboarding communications with dynamic placeholders.</p>
+          </div>
+          <div class="file-card-footer">
+            <div class="file-tags">
+              <span class="file-tag json">JSON</span>
+              <span class="file-tag config">Workflow</span>
+            </div>
+            <span class="file-size">3.2 KB</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── Data Files ── -->
+    <div class="folder-section" id="data">
+      <div class="section-header">
+        <h2 class="section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          Data Files
+        </h2>
+        <span class="section-count">3 files</span>
+      </div>
+      <div class="files-grid">
+
+        <div class="file-card">
+          <div class="file-card-header">
+            <div class="file-icon data">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </div>
+            <div class="file-info">
+              <div class="file-name">employee_seed_data.csv</div>
+              <div class="file-path">data/employee_seed_data.csv</div>
+            </div>
+          </div>
+          <div class="file-card-body">
+            <p class="file-desc">500+ employee seed records for testing. Includes personnel number, name, DOB, gender, department, position, cost center, pay scale group, and hire date across all 5 departments.</p>
+          </div>
+          <div class="file-card-footer">
+            <div class="file-tags">
+              <span class="file-tag py">CSV</span>
+              <span class="file-tag hcm">HCM-PA</span>
+            </div>
+            <span class="file-size">142 KB</span>
+          </div>
+        </div>
+
+        <div class="file-card">
+          <div class="file-card-header">
+            <div class="file-icon test">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <div class="file-info">
+              <div class="file-name">payroll_results.sql</div>
+              <div class="file-path">data/payroll_results.sql</div>
+            </div>
+          </div>
+          <div class="file-card-body">
+            <p class="file-desc">SQL insert scripts for payroll result tables (RT, CRT, WPBP). Contains sample gross-to-net breakdowns with Indian statutory deductions for validation against ABAP payroll run output.</p>
+          </div>
+          <div class="file-card-footer">
+            <div class="file-tags">
+              <span class="file-tag sql">SQL</span>
+              <span class="file-tag hcm">HCM-PY</span>
+            </div>
+            <span class="file-size">87 KB</span>
+          </div>
+        </div>
+
+        <div class="file-card">
+          <div class="file-card-header">
+            <div class="file-icon config">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </div>
+            <div class="file-info">
+              <div class="file-name">org_unit_mapping.csv</div>
+              <div class="file-path">data/org_unit_mapping.csv</div>
+            </div>
+          </div>
+          <div class="file-card-body">
+            <p class="file-desc">Maps TechNova departments (IT, HR, Finance, Sales, Operations) to SAP organizational units, positions, cost centers, pay scale areas, and personnel subareas for OM integration.</p>
+          </div>
+          <div class="file-card-footer">
+            <div class="file-tags">
+              <span class="file-tag py">CSV</span>
+              <span class="file-tag sap">SAP OM</span>
+            </div>
+            <span class="file-size">4.2 KB</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── Test Scripts ── -->
+    <div class="folder-section" id="testing">
+      <div class="section-header">
+        <h2 class="section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          Test Scripts
+        </h2>
+        <span class="section-count">3 files</span>
+      </div>
+      <div class="files-grid">
+
+        <div class="file-card">
+          <div class="file-card-header">
+            <div class="file-icon test">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <div class="file-info">
+              <div class="file-name">test_payroll_run.py</div>
+              <div class="file-path">testing/test_payroll_run.py</div>
+            </div>
+          </div>
+          <div class="file-card-body">
+            <p class="file-desc">Integration test suite validating PC00_M40 payroll run. Verifies gross-to-net calculations, PF/ESI/TDS deductions, bank file generation, and FI posting correctness for Indian payroll.</p>
+          </div>
+          <div class="file-card-footer">
+            <div class="file-tags">
+              <span class="file-tag py">Python</span>
+              <span class="file-tag sap">PyTest</span>
+            </div>
+            <span class="file-size">7.3 KB</span>
+          </div>
+        </div>
+
+        <div class="file-card">
+          <div class="file-card-header">
+            <div class="file-icon test">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
+            </div>
+            <div class="file-info">
+              <div class="file-name">test_onboarding_flow.py</div>
+              <div class="file-path">testing/test_onboarding_flow.py</div>
+            </div>
+          </div>
+          <div class="file-card-body">
+            <p class="file-desc">End-to-end onboarding test cases covering PA40 hire action, infotype creation (IT0000-IT0021), org assignment, work schedule defaulting, email notification, and ESS portal activation.</p>
+          </div>
+          <div class="file-card-footer">
+            <div class="file-tags">
+              <span class="file-tag py">Python</span>
+              <span class="file-tag sap">E2E</span>
+            </div>
+            <span class="file-size">9.8 KB</span>
+          </div>
+        </div>
+
+        <div class="file-card">
+          <div class="file-card-header">
+            <div class="file-icon data">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="file-info">
+              <div class="file-name">test_compliance.py</div>
+              <div class="file-path">testing/test_compliance.py</div>
+            </div>
+          </div>
+          <div class="file-card-body">
+            <p class="file-desc">Statutory compliance validation tests for PF (12%+12%), ESI (0.75%+3.25%), professional tax, TDS slab checks, gratuity eligibility, and Form 16 data accuracy across multiple employee categories.</p>
+          </div>
+          <div class="file-card-footer">
+            <div class="file-tags">
+              <span class="file-tag py">Python</span>
+              <span class="file-tag sap">Compliance</span>
+            </div>
+            <span class="file-size">6.5 KB</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── Project Timeline ── -->
+    <div class="folder-section" id="timeline">
+      <div class="section-header">
+        <h2 class="section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Project Timeline
+        </h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item completed">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Phase 1: Workforce Planning &amp; Org Setup</h4>
+            <p>SAP OM configuration, organizational unit creation, position budgeting, and vacancy planning for all 5 departments.</p>
+            <div class="timeline-date">Week 1-2 &mdash; Completed</div>
+          </div>
+        </div>
+
+        <div class="timeline-item completed">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Phase 2: Recruitment &amp; Hiring</h4>
+            <p>PB10 recruitment configuration, E-Rec integration, security clearance workflow (IT9901), and candidate-to-employee conversion via PA40.</p>
+            <div class="timeline-date">Week 3-4 &mdash; Completed</div>
+          </div>
+        </div>
+
+        <div class="timeline-item completed">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Phase 3: Onboarding &amp; Employee Master</h4>
+            <p>PA30 infotype configuration, personal data, bank details, emergency contacts, organizational assignment, and ESS portal provisioning.</p>
+            <div class="timeline-date">Week 5-6 &mdash; Completed</div>
+          </div>
+        </div>
+
+        <div class="timeline-item completed">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Phase 4: Time Management &amp; Attendance</h4>
+            <p>CATS2 time entry, PT60 evaluation, shift scheduling, leave management via ESS/MSS, and overtime/absence quota configuration.</p>
+            <div class="timeline-date">Week 7-8 &mdash; Completed</div>
+          </div>
+        </div>
+
+        <div class="timeline-item completed">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Phase 5: Payroll Processing</h4>
+            <p>PC00_M40 payroll driver, gross-to-net calculation, PF/ESI/TDS/PT deductions, Precision Skill Surcharge (/3PS), payslip distribution, and FI posting.</p>
+            <div class="timeline-date">Week 9-12 &mdash; Completed</div>
+          </div>
+        </div>
+
+        <div class="timeline-item completed">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Phase 6: Benefits &amp; Compliance</h4>
+            <p>IT0021/IT0376 benefits enrollment, medical insurance, gratuity calculation, group insurance, and statutory compliance report generation.</p>
+            <div class="timeline-date">Week 13-14 &mdash; Completed</div>
+          </div>
+        </div>
+
+        <div class="timeline-item active">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Phase 7: Performance &amp; Development</h4>
+            <p>SAP LSO integration, goal setting, periodic appraisals, training enrollment, promotion workflow, and compensation revision processing.</p>
+            <div class="timeline-date">Week 15-16 &mdash; In Progress</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Phase 8: Separation &amp; Final Settlement</h4>
+            <p>PA40 Action 33 separation processing, gratuity settlement (IT0019), leave encashment, PF withdrawal, exit interview, and employee record archiving.</p>
+            <div class="timeline-date">Week 17-18 &mdash; Pending</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-text">
+        <strong>TechNova Pvt. Ltd.</strong> &mdash; SAP HCM Hire-to-Retire Project Files
+      </div>
+      <div class="footer-links">
+        <a href="#overview">Overview</a>
+        <a href="#structure">Structure</a>
+        <a href="#programs">Programs</a>
+        <a href="#config">Config</a>
+        <a href="#timeline">Timeline</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ SCROLL TO TOP ═══ -->
+  <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- ═══ JAVASCRIPT ═══ -->
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    const scrollTop = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+      scrollTop.classList.toggle('visible', window.scrollY > 400);
+    });
+
+    // Animate file cards on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.file-card').forEach((card, i) => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(16px)';
+      card.style.transition = `all 0.45s ease ${i * 0.06}s`;
+      observer.observe(card);
+    });
+
+    // Animate timeline items
+    document.querySelectorAll('.timeline-item').forEach((item, i) => {
+      item.style.opacity = '0';
+      item.style.transform = 'translateX(-12px)';
+      item.style.transition = `all 0.5s ease ${i * 0.1}s`;
+      observer.observe(item);
+    });
+  </script>
+
+</body>
+</html>
